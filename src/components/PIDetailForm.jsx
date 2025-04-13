@@ -111,9 +111,11 @@ export default function PIDetailForm({
     imageSrc === upArrow && setImageSrc(downArrow);
   }
   return (
-    <div className="border-2 rounded-[12px] p-5 bg-gradient-to-t from-slate-300 to-slate-400">
+    <div className="border-2 rounded-[12px] p-5 bg-gradient-to-t from-slate-300 to-slate-400 w-[28vw]">
       <div className="flex justify-between items-center w-[25vw]">
-        <h1 className="pt-3 pb-3 text-[22px] font-heading">Personal Information</h1>
+        <h1 className="pt-3 pb-3 text-[22px] font-heading">
+          Personal Information
+        </h1>
         <img
           className="size-5 hover:scale-[1.2] active:translate-y-[5px]"
           src={imageSrc}

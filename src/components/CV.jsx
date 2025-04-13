@@ -7,32 +7,33 @@ export default function CV({
   projectsDetail,
 }) {
   return (
-    <div className=" w-[60vw]  bg-white flex flex-col items-center p-8 font-CVheading" id="cv-content">
+    <div
+      className=" w-[60vw]  bg-white flex flex-col items-center p-8 font-CVheading"
+      id="cv-content"
+    >
       <div className="flex flex-col items-center">
         <div className="text-5xl flex gap-3 font-bold ">
           <div>{PIDetail.firstName}</div>
           <div>{PIDetail.lastName}</div>
         </div>
         <ul className="flex gap-8 list-disc">
-          <li>{PIDetail.email}</li>
-          <li>{PIDetail.phone}</li>
-          <li>{PIDetail.place}</li>
+          <div>• {PIDetail.email}</div>
+          <div>• {PIDetail.phone}</div>
+          <div>• {PIDetail.place}</div>
         </ul>
         <ul className="flex gap-8 list-disc">
           {PIDetail.extraDet.map((item, index) => {
             return (
-              <li key={index}>
+              <div key={index}>
                 {item.link !== "" ? (
-                  <a
-                    href={item.link}
-                    className="text-blue-800 underline font-bold"
-                  >
+                  <a href={item.link} className="text-blue-800  font-bold">
+                    <span className="text-black">• </span>
                     {item.text}
                   </a>
                 ) : (
-                  <>{item.text}</>
+                  <>• {item.text}</>
                 )}
-              </li>
+              </div>
             );
           })}
         </ul>
@@ -51,7 +52,7 @@ export default function CV({
               <div>
                 <p className="italic">{item.desc}</p>
                 {item.detail.map((item, ind) => {
-                  return <li key={ind}>{item.det}</li>;
+                  return <div key={ind}>• {item.det}</div>;
                 })}
               </div>
               <br />
@@ -75,7 +76,7 @@ export default function CV({
               <div>
                 <p className="italic">{item.desc}</p>
                 {item.detail.map((item, ind) => {
-                  return <li key={ind}>{item.det}</li>;
+                  return <div key={ind}>• {item.det}</div>;
                 })}
               </div>
               <br />
@@ -98,7 +99,7 @@ export default function CV({
                 <div>
                   <p className="italic">{item.desc}</p>
                   {item.detail.map((item, ind) => {
-                    return <li key={ind}>{item.det}</li>;
+                    return <div key={ind}>• {item.det}</div>;
                   })}
                 </div>
                 <br />

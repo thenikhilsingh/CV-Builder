@@ -14,7 +14,7 @@ export default function GeneralForm({ detailData, setDetailData, index }) {
   }
 
   return !isDeleted ? (
-    <div className="border-2 border-dotted rounded-[12px] flex flex-col justify-center items-center gap-4 p-4 bg-gradient-to-r from-slate-200 to-slate-300 ">
+    <div className="border-2 border-dotted rounded-[12px] flex flex-col justify-center items-center gap-4 p-4 bg-gradient-to-r from-slate-200 to-slate-300  ">
       <div className="w-[24vw] flex justify-end ">
         <img
           className="size-8 hover:scale-[1.2] active:translate-y-[5px]"
@@ -91,14 +91,14 @@ export default function GeneralForm({ detailData, setDetailData, index }) {
         onClick={() => {
           setDetailData((prevData) => {
             const newArr = [...prevData];
-            const newObj = {...newArr[index]};
+            const newObj = { ...newArr[index] };
             const newDetail = [...newObj.detail];
 
             newDetail.push({
               labelName: `Detail ${newDetail.length + 1}`,
               det: "",
             });
-            
+
             newObj.detail = newDetail;
             newArr[index] = newObj;
             return newArr;
