@@ -35,7 +35,7 @@ export default function GenDetailForm({ heading, detailData, setDetailData }) {
             />
           ))}
       </div>
-      <br />
+
       {showForm ? (
         <Btn
           name="Add New Section"
