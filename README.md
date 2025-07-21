@@ -1,12 +1,48 @@
-# React + Vite
+# 🧾 CV Builder
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**CV Builder** is a responsive and dynamic web application that helps users create, customize, and preview their professional CV/resume in real-time. Built with **React**, it features an intuitive interface, section-wise editing, and live preview functionality.
 
-Currently, two official plugins are available:
+## 🔗 Live Demo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+👉 [Use the CV Builder](https://cv-builder-beta-sand.vercel.app/)
 
-## Expanding the ESLint configuration
+## 🛠️ Tech Stack
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- React.js  
+- HTML5 & JSX  
+- CSS3 (Modules or Global)  
+- JavaScript (ES6+)  
+- Vite (for fast development build)
+
+## 🎯 Features
+
+- 🧠 Add sections like Education, Experience, Projects, and Skills  
+- 🖊️ Real-time editing and instant preview  
+- ➕ Dynamic form fields (add/remove entries)  
+- 📄 Clean, printable resume layout  
+- 📱 Responsive design for all screen sizes
+
+## 📸 Screenshot
+
+![CV Builder Screenshot](screenshot.png)
+
+> Upload a `screenshot.png` to your repo to show a preview here.
+
+## 🚀 Getting Started
+
+To run this project locally:
+
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/yourusername/cv-builder.git
+2. Navigate to the project folder </br>
+cd cv-builder  </br>
+3. Install dependencies  </br>
+npm install
+4. Start the development server  </br>
+npm run dev   </br>
+5. Open http://localhost:5173 to view it in your browser.
+
+🚀 Deployment
+Deployed on Vercel
+https://cv-builder-beta-sand.vercel.app/
