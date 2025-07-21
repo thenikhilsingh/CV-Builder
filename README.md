@@ -43,6 +43,6 @@ npm install
 npm run dev   </br>
 5. Open http://localhost:5173 to view it in your browser.
 
-🚀 Deployment
-Deployed on Vercel
+## 🚀 Deployment
+Deployed on Vercel </br>
 https://cv-builder-beta-sand.vercel.app/
